@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <title>My Portfolio</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="#"><img src="logo.png" alt="My Portfolio"></a>
+        </div>
+        <div class="nav_side">
+            <a href="index.html" aria-current="page">Home</a>
+            <a href="about.html" aria-current="page">About</a>
+            <a href="#" aria-current="page">Contact</a>
+        </div>
+    </nav>
+
+    <div class="animated_text" id="myP">
+        <div class="big_text">
+            <h2 class="animated_text1">Hello,</h2>
+            <br>
+            <h3 class="animated_text2">You</h3>
+        </div>
+        <div class="small_text">
+            <p>👋 Double-click to introduce yourself. Tell the world what you do — and why they should care</p>
+        </div>
+    </div>
+
+    <div class="main_content">
+        <div class="content1">
+            <h1>01</h1> <br>
+            <h2>Sinder</h2> <br>
+            <p>A dating app — for single socks.</p> <br>
+            <a href="">view project</a>
+
+        </div>
+        <div class="content2">
+            <h1>02</h1> <br>
+            <h2>iGotchu</h2> <br>
+            <p>An app that just gets you.</p>
+            <a href="">view project</a>
+
+        </div>
+        <div class="content3">
+            <h1>03</h1> <br>
+            <h2>Looking for Life <br> Beyond Earth</h2> <br>
+            <p>Looking for Life Beyond Earth is a project whose description <br> would be wholly redundant.</p>
+            <a href="">view project</a>
+
+        </div>
+    </div>
+
+    <footer>
+        <div class="logo">
+            <img src="logo.png" alt="My Portfolio">
+        </div>
+        <div class="quicklinks">
+            <a href="\">Instagram</a>
+            <a href="\">Twitter</a>
+            <a href="\">LinkedIn</a>
+            <a href="\">Behance</a>
+            <a href="\">Dribble</a>
+            <a href="\">Image License Info</a>
+            <a href="\">Powered by Webflow</a>
+        </div>
+        <div class="para">
+            <p>This section is a Symbol. <br>
+                Edit it once, and watch it update across your site. <br>
+                Like freaking magic</p>
+        </div>
+    </footer>
+    
+</body>
+
+<script>
+    window.onscroll = function()
+    {
+            if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10)
+            {
+                document.getElementById("myP").setAttribute("style","animation: collapse; animation-duration: 2s; animation-fill-mode: forwards;") }
+                
+            else{
+                document.getElementById("myP").setAttribute("style","animation: collapse; animation-duration: 2s; animation-fill-mode: backwards;")
+            }
+        }
+
+</script>
+</html>
